@@ -6,6 +6,10 @@ func Add(a, b float64) float64 {
     return a + b
 }
 
+func splitByNewLine(str string) []string {
+	return strings.Split(strings.TrimSpace(str), "\r\n")
+}
+
 // Subtract returns the difference between two numbers
 func Subtract(a, b float64) float64 {
     return a - b
