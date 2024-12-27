@@ -2,7 +2,8 @@
 package calculator
 
 import (
-	"fmt"
+	"fmt",
+	"strings"
 )
 
 // Add returns the sum of two numbers
