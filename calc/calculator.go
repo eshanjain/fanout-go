@@ -7,8 +7,8 @@ import (
 
 // Add returns the sum of two numbers
 func Add(a, b float64) float64 {
-    fmt.Println(splitByNewLine("Hello World")
-    fmt.Println(splitByNewLine("Hello World\r\nNew World")
+    fmt.Println(splitByNewLine("Hello World"))
+    fmt.Println(splitByNewLine("Hello World\r\nNew World"))
     return a + b
 }
 
