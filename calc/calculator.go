@@ -2,7 +2,7 @@
 package calculator
 
 import (
-	"fmt",
+	"fmt"
 	"strings"
 )
 
