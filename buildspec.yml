@@ -1,0 +1,23 @@
+version: 0.2
+
+batch:
+  fast-fail: true
+  build-fanout:
+    parallelism: 3
+    ignore-failure: false
+
+phases:
+  install:
+    commands:
+      - echo 'Installing Go dependencies'
+      - go version
+  pre_build:
+    commands:
+      - echo 'prebuild'
+  build:
+    commands:
+      - echo 'Running go Tests'
+      - go test -v
+  post_build:
+    commands:
+      - echo "Would deploy here"
