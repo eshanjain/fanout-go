@@ -17,6 +17,8 @@ phases:
   build:
     commands:
       - echo 'Running go Tests'
+      - go mod init calculator
+      - cd calc
       - go test -v
   post_build:
     commands:
