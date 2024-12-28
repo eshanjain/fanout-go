@@ -8,16 +8,16 @@ import (
 
 // Add returns the sum of two numbers
 func Add(a, b float64) float64 {
-    fmt.Println(strings.Join(splitByNewLine("   Hello \nWor\rld"), ","))
-    fmt.Println(strings.Join(splitByNewLine("\r\r\r\n\nHello\n World\r\n\r\nNew World"), ","))
+    // fmt.Println(strings.Join(splitByNewLine("   Hello \nWor\rld"), ","))
+    // fmt.Println(strings.Join(splitByNewLine("\r\r\r\n\nHello\n World\r\n\r\nNew World"), ","))
     return a + b
 }
 
-func splitByNewLine(str string) []string {
-	return strings.FieldsFunc(str, func(r rune) bool {
-		return r == '\n' || r == '\r'
-	})
-}
+// func splitByNewLine(str string) []string {
+// 	return strings.FieldsFunc(str, func(r rune) bool {
+// 		return r == '\n' || r == '\r'
+// 	})
+// }
 
 // Subtract returns the difference between two numbers
 func Subtract(a, b float64) float64 {
