@@ -18,9 +18,8 @@ phases:
     commands:
       - echo 'Running go Tests'
       - go mod init calculator
-      - codebuild-glob-search "**/*_test.go"
       - cd calc
-      - go test -v
+      - codebuild-tests-run --test-command "go test -v calculator.go" --files-search "codebuild-glob-search '**/*_test.go'"
   post_build:
     commands:
       - echo "Would deploy here"
