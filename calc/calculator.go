@@ -14,7 +14,7 @@ func Add(a, b float64) float64 {
 }
 
 func splitByNewLine(str string) []string {
-	robustLines := strings.FieldsFunc(mixedText, func(r rune) bool {
+	robustLines := strings.FieldsFunc(str, func(r rune) bool {
 		return r == '\n' || r == '\r'
 	})
 	return robustLines
