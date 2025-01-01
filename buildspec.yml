@@ -19,7 +19,7 @@ phases:
       - echo 'Running go Tests'
       - go mod init calculator
       - cd calc
-      - codebuild-tests-run --test-command "go test -v calculator.go" --files-search 'ls "**/*_test.go"'
+      - codebuild-tests-run --test-command "go test -v calculator.go" --files-search 'ls **/*_test.go'
       - codebuild-tests-run --test-command "go test -v calculator.go" --files-search 'find . -name "**/*_test.go"'
       - codebuild-tests-run --test-command "go test -v calculator.go" --files-search "codebuild-glob-search '**/*_test.go'"
   post_build:
